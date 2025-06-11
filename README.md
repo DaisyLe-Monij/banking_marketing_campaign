@@ -13,4 +13,4 @@ The main objectives of the project are:
 
 5 - Churn Analysis: To examine customer churn—whether certain factors like job type, marital status, or financial behavior (such as account balance or loan status) contribute to customers not subscribing to the bank's products.
 
-By using SQL queries, we aim to extract meaningful insights from this customer data to inform decisions on how to optimize marketing strategies and improve customer engagement.
+By using SQL queries, the analyst aims to extract meaningful insights from this customer data to inform decisions on how to optimize marketing strategies and improve customer engagement.
