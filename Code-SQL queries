@@ -4,37 +4,42 @@
 
 -- 1.a
 -- Count of customers by job type:
-SELECT job, COUNT(*) AS customer_count
-FROM customers
-GROUP BY job;
+SELECT job, 
+       COUNT(*) AS customer_count
+       FROM customers
+       GROUP BY job;
 
 -- 1.b
 -- Average age by education level:
-SELECT education, AVG(age) AS avg_age
-FROM customers
-GROUP BY education;
+SELECT education, 
+       AVG(age) AS avg_age
+       FROM customers
+       GROUP BY education;
 
 -- 1.c
 -- Number of married vs. single customers:
-SELECT marital, COUNT(*) AS customer_count
-FROM customers
-GROUP BY marital;
+SELECT marital, 
+       COUNT(*) AS customer_count
+       FROM customers
+       GROUP BY marital;
 
 -- 2
 -- Loan and Balance Correlation
 -- Objective: Investigate the relationship between whether a customer has a loan and their account balance.
 -- 2.a
 -- Average balance for customers with and without a loan:
-SELECT loan, AVG(balance) AS avg_balance
-FROM customers
-GROUP BY loan;
+SELECT loan, 
+       AVG(balance) AS avg_balance
+       FROM customers
+       GROUP BY loan;
 
 -- 2.b
 -- Count of customers with loan by job type:
-SELECT job, COUNT(*) AS customer_count
-FROM customers
-WHERE loan = 'yes'
-GROUP BY job;
+SELECT job, 
+       COUNT(*) AS customer_count
+       FROM customers
+       WHERE loan = 'yes'
+       GROUP BY job;
 
 -- 3
 -- Campaign Effectiveness
@@ -45,16 +50,16 @@ SELECT contact,
        COUNT(CASE WHEN y = 'yes' THEN 1 END) AS converted_customers,
        COUNT(*) AS total_customers,
        (COUNT(CASE WHEN y = 'yes' THEN 1 END) * 100 / COUNT(*)) AS conversion_rate
-FROM customers
-GROUP BY contact;
+       FROM customers
+       GROUP BY contact;
 
 -- 3.2
 -- Outcome of the campaign based on previous marketing campaign results:
 SELECT poutcome, 
        COUNT(CASE WHEN y = 'yes' THEN 1 END) AS converted_customers,
        COUNT(*) AS total_customers
-FROM customers
-GROUP BY poutcome;
+       FROM customers
+       GROUP BY poutcome;
 
 -- 4
 -- Seasonal Trends in Marketing Campaigns
