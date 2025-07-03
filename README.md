@@ -21,11 +21,11 @@ This project is an analysis providing useful insights about productivity growth 
 
 The main objectives of the project are:
 
-Create a report that show the population, GDP, population density, GDP per capita by 2020 and GDP Annual growth % by year 
-Data preparing: 
-Data modeling: DAX measures, referencing and duplicating queries, merging queries
-Data visualizing: 
-- World map chart
-- Table with format conditioning, sparklines
-- Drillthrough to detailed page with details about these figures by country, visualizing by stacked and line chart, new card visual
+Create a report that show the Global Economics Indicators 
+- Data preparing: Getting Data from Web APIs, Preparing the Economic Indicator, referencing and duplicating queries, merging queries
+- Data modeling: DAX measures to calculate population, GDP, population density, GDP per capita by 2020 and GDP Annual growth % by year
+- Data visualizing: 
+1 - World map chart
+2 - Table with format conditioning, sparklines
+3 - Drillthrough to detailed page with details about these figures by country, visualizing by stacked and line chart, new card visual
 
