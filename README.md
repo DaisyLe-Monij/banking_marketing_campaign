@@ -16,7 +16,7 @@ The main objectives of the project are:
 By using SQL queries, the analyst aims to extract meaningful insights from this customer data to inform decisions on how to optimize marketing strategies and improve customer engagement.
 
 # Global Economic Data
-This project is an analysis providing useful insights about productivity growth of 211 countries and territories around the world. This dataset includes two datasource, countries-indicators.CSV file and another source from the API: https://api.worldbank.org/v2/country/all?format=JSON
+This project is an analysis providing useful insights about productivity growth of 211 countries and territories around the world. This dataset includes two datasource, PowerBI-countries-indicators.CSV file and another source from the API: https://api.worldbank.org/v2/country/all?format=JSON
 &per_page=500. The data consits land area, ISO code, longtitude, latitude, series name and series code for population, Gross Domestic Product (GDP) of each countries from 1973 to 2021.
 
 The main objectives of the project are:
